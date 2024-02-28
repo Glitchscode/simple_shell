@@ -16,7 +16,8 @@ void prompt(void);
 char *input(void);
 void execute_command(char *input, char *argv[], char **env);
 int tokenize_input(char *input, char *args[]);
-int handle_builtin_commands(char **args, int num_args, char *input, char **env);
+int handle_builtin_commands(char **args,
+			    int num_args, char *input, char **env);
 void print_env(char **env);
 void handle_exit(char *input, int exit_status);
 int shell_exit(char **args, char *input);
