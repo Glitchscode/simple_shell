@@ -116,11 +116,8 @@ int main(int argc, char *argv[], char **env)
 	(void)argc;
 	while (1)
 	{
-Here:
 		prompt();
 		input_buffer = input();
-		if (input_buffer == NULL)
-			goto Here;
 		execute_command(input_buffer, argv, env);
 		free(input_buffer);
 	}
