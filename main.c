@@ -10,14 +10,15 @@
 
 int main(int argc, char **argv)
 {
-	(void)argc;
-	char *buf = NULL, *token;
+	char *token;
 	size_t count = 0;
 	ssize_t nread;
 	pid_t child_pid;
 	int i, status;
 	char *path;
+	char *buf = NULL;
 
+	(void)argc;
 	while (1)
 	{
 Here:
